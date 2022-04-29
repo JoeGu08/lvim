@@ -10,53 +10,6 @@ M.config = function()
       "sainnhe/gruvbox-material"
     },
     {
-      "rose-pine/neovim",
-      as = "rose-pine",
-      config = function()
-        require("user.theme").rose_pine()
-        vim.cmd [[colorscheme rose-pine]]
-      end,
-      cond = function()
-        local _time = os.date "*t"
-        return (_time.hour >= 1 and _time.hour < 9)
-      end,
-    },
-    {
-      "abzcoding/tokyonight.nvim",
-      branch = "feat/local",
-      config = function()
-        require("user.theme").tokyonight()
-        vim.cmd [[colorscheme tokyonight]]
-      end,
-      cond = function()
-        local _time = os.date "*t"
-        return _time.hour >= 9 and _time.hour < 17
-      end,
-    },
-    {
-      "catppuccin/nvim",
-      as = "catppuccin",
-      config = function()
-        require("user.theme").catppuccin()
-        vim.cmd [[colorscheme catppuccin]]
-      end,
-      cond = function()
-        local _time = os.date "*t"
-        return (_time.hour >= 17 and _time.hour < 21)
-      end,
-    },
-    {
-      "rebelot/kanagawa.nvim",
-      config = function()
-        require("user.theme").kanagawa()
-        vim.cmd [[colorscheme kanagawa]]
-      end,
-      cond = function()
-        local _time = os.date "*t"
-        return (_time.hour >= 21 and _time.hour < 24) or (_time.hour >= 0 and _time.hour < 1)
-      end,
-    },
-    {
       "ray-x/lsp_signature.nvim",
       config = function()
         require("user/lsp_signature").config()
