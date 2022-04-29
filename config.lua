@@ -1,8 +1,8 @@
 -- Neovim
 -- =========================================
-lvim.format_on_save = false
+lvim.format_on_save = true
 lvim.leader = " "
-lvim.colorscheme = "pablo"
+lvim.colorscheme = "gruvbox-material"
 lvim.debug = false
 vim.lsp.set_log_level "warn"
 lvim.log.level = "warn"
