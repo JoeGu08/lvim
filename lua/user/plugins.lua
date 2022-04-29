@@ -7,6 +7,9 @@ M.config = function()
   end
   lvim.plugins = {
     {
+      "sainnhe/gruvbox-material"
+    }
+    {
       "rose-pine/neovim",
       as = "rose-pine",
       config = function()
