@@ -293,6 +293,7 @@ M.config = function()
       d = { "<cmd>lua require('persistence').stop()<cr>", "Quit without saving session" },
       l = { "<cmd>lua require('persistence').load(last=true)<cr>", "Restore last session" },
       s = { "<cmd>lua require('persistence').load()<cr>", "Restore for current dir" },
+      q = { "<cmd>quit!<cr>", "quit" }
     }
   end
   lvim.builtin.which_key.mappings["n"] = {
